@@ -1,0 +1,183 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Brew & Bites Café</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-selection">
+            <div class="logo"> Brew & Bites </div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact</a>
+            <button type="button" id="themeButton">Dark Mode</button>
+        </nav>
+    </header>
+<section class="home-section" id="home">
+    <div class="home-setting">
+        <div class="home-text">
+        <h1>Welcome to</h1>
+        <h1>Brew & Bites Café</h1>
+                <div id="openingStatus">Checking status</div>
+                <h3>Fresh Coffee | Delicious Bites | Cozy Moments</h3>
+                <p>Enjoy freshly brewed coffee, delicious pastries,and a warm atmosphere at Brew & Bites Café.</p>
+                <button type="button">Explore Our Menu</button>
+            </div>
+            <div class="cafe-image">
+                <img class="cafe-image" src="/cafe picture.webp" alt="cafe">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h3>ABOUT US</h3>
+        <h1>Welcome to Brew & Bites</h1>
+        <p>
+            Brew & Bites Café is a cozy place where you can enjoy
+            freshly prepared coffee, tasty pastries and relaxing moments.
+        </p>
+            <div id="extraAbout">
+                <p>
+                    Our café offers a comfortable environment for
+                    students, friends, families and coffee lovers.
+                </p>
+                <p>
+                    Our café offers a comfortable environment for
+                    students, friends, families and coffee lovers.
+                </p>
+                <p>
+                    Our café offers a comfortable environment for
+                    students, friends, families and coffee lovers.
+                </p>
+            </div>
+
+            <button type="button" id="readMoreButton">Read More</button>
+    </section>
+    <section id="menu">
+        <h3>OUR MENU</h3>
+        <h1>Fresh & Delicious</h1>
+        <p>Choose your favorite drinks and pastries.</p>
+        <div class="filter-buttons">
+            <button type="button" class="filter-btn" data-category="all"> All</button>
+
+            <button type="button" class="filter-btn" data-category="drinks">Drinks</button>
+            <button type="button" class="filter-btn" data-category="pastries">Pastries</button>
+        </div>
+        <table id="menuTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-category="drinks">
+                    <td>Espresso</td>
+                    <td>Drinks</td>
+                    <td>$3</td>
+                    <td>
+                <input type="checkbox" class="menu-item" data-price="3"></td>
+                </tr>
+                <tr data-category="drinks">
+                    <td>Cappuccino</td>
+                    <td>Drinks</td>
+                    <td>$4</td>
+                    <td>
+                        <input type="checkbox"class="menu-item" data-price="4">
+                    </td>
+                </tr>
+                <tr data-category="drinks">
+                    <td>Caramel Latte</td>
+                    <td>Drinks</td>
+                    <td>$5</td>
+                    <td>
+                <input type="checkbox" class="menu-item" data-price="5">
+                    </td>
+                </tr>
+                <tr data-category="pastries">
+                    <td>Chocolate Croissant</td>
+                    <td>Pastries</td>
+                    <td>$4</td>
+                    <td>
+                        <input type="checkbox" class="menu-item" data-price="4">
+                    </td>
+                </tr>
+                <tr data-category="pastries">
+                    <td>Chocolate Cake</td>
+                    <td>Pastries</td>
+                    <td>$6</td>
+                    <td>
+                <input type="checkbox" class="menu-item" data-price="6">
+                    </td>
+                </tr>
+                <tr data-category="pastries">
+                    <td>Glazed Donut</td>
+                    <td>Pastries</td>
+                    <td>$3</td>
+                    <td>
+                <input type="checkbox" class="menu-item" data-price="3">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="total">Total: $0.00</p>
+    </section>
+    <section id="offers">
+        <h3>SPECIAL OFFERS</h3>
+        <h1>Today's Café Deals</h1>
+        <div class="offers-container">
+            <article class="offer-card">
+                <h2>Coffee Combo</h2>
+                <p>Any coffee with a fresh pastry.</p>
+                <h3>$7</h3>
+            </article>
+            <article class="offer-card">
+                <h2>Sweet Deal</h2>
+                <p>Chocolate cake with a cappuccino.</p>
+                <h3>$9</h3>
+            </article>
+            <article class="offer-card">
+                <h2> Breakfast Deal</h2>
+                <p>Croissant with your favorite coffee.</p>
+                <h3>$6</h3>
+            </article>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="contact">
+        <h3>CONTACT US</h3>
+        <h1>We'd Love to Hear From You</h1>
+        <p>Have a question, special request or feedback? Send us a message. </p>
+        <div class="contact-info">
+            <form class="contact-form" id="contactForm">
+                <label for="name">Customer Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <label for="email">Email</label>
+                <input type="email"id="email"name="email" placeholder="Enter your email">
+                <label for="birth-year">Birth Year</label>
+                <input type="text" id="birth-year" name="birth-year" placeholder="e.g. 2002">
+                <label for="special-notes">Special Request / Notes</label>
+                <textarea id="special-notes" name="special-notes" maxlength="100" rows="4" placeholder="Write your special request..."></textarea>
+                <p id="char-count"> 100 characters remaining</p>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="formMessage"></p>
+        </div>
+    </section>
+    <footer>
+        <h2>Brew & Bites Café</h2>
+        <p>Fresh coffee. Fresh bites. Happy moments.</p>
+        <p>© 2026 Brew & Bites Café. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
