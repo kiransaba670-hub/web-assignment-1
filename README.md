@@ -1,13 +1,22 @@
-Project Description
-This is a web development project created using HTML, CSS, and JavaScript. It demonstrates the basic concepts of web development, including webpage structure, styling, and interactive functionality.
+Project Overview
+This project is a web development assignment built using HTML, CSS, and JavaScript. It demonstrates the fundamental concepts of front-end web development, including webpage structure, responsive styling, and interactive functionality.
 Technologies Used
-HTML/CSS/JavaScript
-Project Files
-index.html – Provides the structure of the webpage.
-style.css – Adds colors, styling, and layout.
-script.js – Adds interactive functionality to the webpage.
-To Run the Project
-
-"Live Demo" (PASTE-YOUR-GITHUB-PAGES-LINK-HERE)
+HTML – For creating the structure and content of the webpage.
+CSS – For styling, layout, colors, and visual presentation.
+JavaScript – For adding interactivity and dynamic functionality.
+Project Structure
+Web-Assignment
+index.html
+style.css
+script.js
+README.md 
+How to Run the Project
+View Online
+Visit the live project using the link below:
+Live Demo: 
+https://kiransaba670-hub.github.io/web-assignment-1/
+  
 Author
 Kiran Saba
+
+ 
